@@ -1,0 +1,103 @@
+/* Estilo geral para a página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bg-water.jpg'); /* Certifique-se de que a imagem bg-water.jpg esteja na pasta img */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo transparente para melhor legibilidade */
+}
+
+h1.titleP {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00c9ff; /* Cor de destaque para o título */
+}
+
+h1.titleP .destaque {
+    color: #ffdd00; /* Cor de destaque para "liberdade financeira" */
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+input[type="e-mail"] {
+    padding: 15px;
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #00c9ff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffdd00;
+    color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sbt {
+    background: #ffdd00;
+    color: #000;
+    border-radius: 25px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sbt:hover {
+    background: #00c9ff;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+/* Design responsivo */
+@media (max-width: 768px) {
+    h1.titleP {
+        font-size: 2rem;
+    }
+
+    input[type="e-mail"],
+    input[type="submit"] {
+        width: 100%;
+        max-width: 90%;
+    }
+}
